@@ -1,0 +1,7 @@
+//REST CLIENT
+
+###get ruta_ejemplo
+GET https://api.themoviedb.org/3/movie/550?api_key=7b7f65b6b54e997297a4bf50784df37f&language=es-ES
+
+###get series originales de netflix
+GET https://api.themoviedb.org/3/discover/tv?api_key=7b7f65b6b54e997297a4bf50784df37f&with_networks=213&language=es-ES
