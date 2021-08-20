@@ -65,8 +65,6 @@ const peliculas = {
       ]
     )
   }
-
-
 }
 
 export default peliculas;
@@ -85,6 +83,5 @@ export default peliculas;
       Terror
       Romance
       Documentales
-
 
 */
