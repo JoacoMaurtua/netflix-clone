@@ -1,18 +1,16 @@
 import React, { useContext } from 'react';
 import { MyContext } from '../App';
-
+import MovieRow from './MovieRow';
 
 export default function MovieList() {
 
   const {data} = useContext(MyContext);
 
   return (
-    <div className="movie-list">
+    <div className="movieList">
       {
         data?data.map((item,index)=>(
-          <div key={index}>
-            <h2>{item.titulo}</h2>
-          </div>
+          <MovieRow key={index} title={item.titulo} list={item.lista}/>
         )):null
       }
     </div>
