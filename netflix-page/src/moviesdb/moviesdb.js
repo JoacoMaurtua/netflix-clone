@@ -21,22 +21,46 @@ const peliculas = {
         {
           tipo:'originals',
           titulo: 'Series Originales de Netflix',
-          lista:[]
+          lista:await funcionAsincrona(`/discover/tv?api_key=${apiKey}&with_networks=213&language=es-ES`)
         },
         {
           tipo:'trending',
           titulo: 'Series Recomendadas de Netflix',
-          lista:[]
+          lista:await funcionAsincrona(`/trending/all/week?api_key=${apiKey}&with_networks=213&language=es-ES`)
         },
         {
           tipo:'toprated',
           titulo: 'Las mas vistas',
-          lista:[]
+          lista:await funcionAsincrona(`/movie/top_rated?api_key=${apiKey}&with_networks=213&language=es-ES`)
         },
         {
           tipo:'action',
           titulo: 'Acción',
-          lista:[]
+          lista:await funcionAsincrona(`/discover/movie?api_key=${apiKey}&with_networks=213&language=es-ES&with_genres=28`)
+        },
+
+        {
+          tipo:'comedy',
+          titulo: 'Comedia',
+          lista:await funcionAsincrona(`/discover/movie?api_key=${apiKey}&with_networks=213&language=es-ES&with_genres=35`)
+        },
+
+        {
+          tipo:'horror',
+          titulo: 'Terror',
+          lista:await funcionAsincrona(`/discover/movie?api_key=${apiKey}&with_networks=213&language=es-ES&with_genres=27`)
+        },
+
+        {
+          tipo:'romance',
+          titulo: 'Romance',
+          lista:await funcionAsincrona(`/discover/movie?api_key=${apiKey}&with_networks=213&language=es-ES&with_genres= 10749`)
+        },
+
+        {
+          tipo:'documentary',
+          titulo: 'Documentales',
+          lista:await funcionAsincrona(`/discover/movie?api_key=${apiKey}&with_networks=213&language=es-ES&with_genres=99`)
         }
       ]
     )
@@ -44,6 +68,8 @@ const peliculas = {
 
 
 }
+
+export default peliculas;
 
 /*
   SERIES ORIGINALES NETFLIX

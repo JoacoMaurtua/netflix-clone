@@ -5,3 +5,13 @@ GET https://api.themoviedb.org/3/movie/550?api_key=7b7f65b6b54e997297a4bf50784df
 
 ###get series originales de netflix
 GET https://api.themoviedb.org/3/discover/tv?api_key=7b7f65b6b54e997297a4bf50784df37f&with_networks=213&language=es-ES
+
+###get series recomendadas
+GET https://api.themoviedb.org/3/trending/all/week?api_key=7b7f65b6b54e997297a4bf50784df37f&with_networks=213&language=es-ES
+
+###las mas vistas
+GET https://api.themoviedb.org/3/movie/top_rated?api_key=7b7f65b6b54e997297a4bf50784df37f&with_networks=213&language=es-ES
+
+###action
+GET https://api.themoviedb.org/3/discover/movie?api_key=7b7f65b6b54e997297a4bf50784df37f&with_networks=213&language=es-ES&with_genres=35
+
