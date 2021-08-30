@@ -1,4 +1,5 @@
 import React from 'react';
+import './MovieRow.css';
 
 export default function MovieRow({title,list}) {
   //https://image.tmdb.org/t/p/w300/mzQf0QAs4jz0fDMrzFlZxQvC9KT.jpg

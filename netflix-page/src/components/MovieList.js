@@ -1,6 +1,7 @@
 import React, { useContext } from 'react';
 import { MyContext } from '../App';
 import MovieRow from './MovieRow';
+import './MovieList.css';
 
 export default function MovieList() {
 

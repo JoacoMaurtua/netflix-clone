@@ -1,0 +1,14 @@
+
+.movieRow h2{
+  margin-bottom: 3rem;
+}
+
+.movieRow--list{
+  margin-bottom: 5rem;
+}
+
+.movieRow--item{
+  display: inline-block;
+  margin: 1.5rem 1rem;
+  
+}
